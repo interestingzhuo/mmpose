@@ -124,8 +124,83 @@ dataset_info = dict(
             id=16,
             color=[255, 128, 0],
             type='lower',
-            swap='left_ankle')
+            swap='left_ankle'),
+        17:
+        dict(
+            name='pelvis(lip)',
+            id=1,
+            color=[51, 153, 255],
+            type='upper',
+            swap=''),
+        18:
+        dict(
+            name='torso(lip)',
+            id=2,
+            color=[51, 153, 255],
+            type='upper',
+            swap=''),
+        19:
+        dict(
+            name='neck',
+            id=3,
+            color=[51, 153, 255],
+            type='upper',
+            swap=''),
+        20:
+        dict(
+            name='head',
+            id=4,
+            color=[51, 153, 255],
+            type='upper',
+            swap=''),
+        21:
+        dict(
+            name='left_foot_thumb',
+            id=5,
+            color=[0, 255, 0],
+            type='upper',
+            swap='right_foot_thumb'),
+        22:
+        dict(
+            name='left_foot_pinky',
+            id=6,
+            color=[255, 128, 0],
+            type='upper',
+            swap='right_foot_pinky'),
+        23:
+        dict(
+            name='left_foot_heel',
+            id=7,
+            color=[0, 255, 0],
+            type='upper',
+            swap='right_foot_heel'),
+        24:
+        dict(
+            name='right_foot_thumb',
+            id=8,
+            color=[255, 128, 0],
+            type='upper',
+            swap='left_foot_thumb'),
+        25:
+        dict(
+            name='right_foot_pinky',
+            id=9,
+            color=[0, 255, 0],
+            type='upper',
+            swap='left_foot_pinky'),
+        26:
+        dict(
+            name='right_foot_heel',
+            id=10,
+            color=[255, 128, 0],
+            type='upper',
+            swap='left_foot_heel'),
     },
+
+
+
+
+
     skeleton_info={
         0:
         dict(link=('left_ankle', 'left_knee'), id=0, color=[0, 255, 0]),
@@ -171,11 +246,13 @@ dataset_info = dict(
         dict(
             link=('right_ear', 'right_shoulder'), id=18, color=[51, 153, 255])
     },
+
     joint_weights=[
         1., 1., 1., 1., 1., 1., 1., 1.2, 1.2, 1.5, 1.5, 1., 1., 1.2, 1.2, 1.5,
-        1.5
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.
     ],
     sigmas=[
         0.026, 0.025, 0.025, 0.035, 0.035, 0.079, 0.079, 0.072, 0.072, 0.062,
-        0.062, 0.107, 0.107, 0.087, 0.087, 0.089, 0.089
+        0.062, 0.107, 0.107, 0.087, 0.087, 0.089, 0.089, 
+        0.026, 0.025, 0.025, 0.035, 0.035, 0.079, 0.079, 0.072, 0.072, 0.062,
     ])
